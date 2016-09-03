@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *A textreverzinator egy szövegmegfordító program
  */
 package textreversinator;
 import java.util.ArrayList;
@@ -16,6 +14,10 @@ import static textreversinator.SubMondat.*;
  * @author bodnart
  */
 public class KettosBetu {
+    
+    /*
+     *Ebben a osztályan a kett?s bet?ket keressük meg a szövegben,és megcseréljük a helyzetüket.
+    */
     
     public static StringBuilder  kettosBetu(){
         
