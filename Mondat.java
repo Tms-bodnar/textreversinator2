@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * A textreverzinator egy szövegfordítprogram.
  */
 package textreversinator;
 
@@ -10,10 +8,14 @@ import static textreversinator.SubMondat.textSB;
 
 /**
  *
- * @author user
+ * @author bodnart
  */
 public class Mondat {
 
+/**
+* Ebben az osztályban olvassuk be a felhasználó álal beírt szöveget.
+*/
+    
         public static String text;
     
         public static String mondat(){ 

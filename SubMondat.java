@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *A textreverzinator egy szövegmegfordító program
  */
 package textreversinator;
 
@@ -15,10 +13,13 @@ import static textreversinator.KerdoMondat.*;
 
 /**
  *
- * @author user
+ * @author bodnart
  */
 public class SubMondat {
     
+/**
+*Ebben az osztályban találjuk az irasjel() tagfüggvényt, és a suBmondat() tagfüggvényt.
+*/
             public static StringBuilder subMondat = null;
             public static StringBuilder textSB = new StringBuilder(Mondat.text);
             public static StringBuilder textSB1;
@@ -27,7 +28,10 @@ public class SubMondat {
             public static int pont = textSB.indexOf(".");
             public static int fJel = textSB.indexOf("!");
             public static int kJel = textSB.indexOf("?");
-            
+/*
+ * Itt megvizsgáljuk, hogy van-e írásjel a mondat végén, ha nincs, elhelyez egy pontot a kés?bbi feldolgozhatóság érdekében.
+ *
+*/            
             public static StringBuilder irasJel(){
                 if (textSB.charAt(0) == ' '){
                     textSB.deleteCharAt(0);
@@ -44,6 +48,12 @@ public class SubMondat {
                 }
                 return textSB;
             }
+            
+/*
+ *Ebben a tagfüggvényben a szöveg tagmondatokra bontása történik. Megkeressük az írásjeleket
+ *majd a helyzetét?l függ?en elindítjuk a mondat manipuláló tagfüggvényeket (kijelentoMondat(), kerdoMondat(), felkialtoMondat())
+*/
+            
             public static ArrayList subMondat(){                
             boolean jelP = ( pont > 0);
             boolean jelF = (fJel > 0 );

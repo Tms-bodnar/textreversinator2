@@ -1,19 +1,23 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *A textreverzinator egy szövegmegfordító program
  */
 package textreversinator;
 
 import static textreversinator.SubMondat.*;
 import static textreversinator.KettosBetu.*;
 
-
 /**
  *
- * @author user
+ * @author bodnart
  */
 public class KijelentoMondat {
+    
+/**
+*Ebben az osztályban a pontra végz?d? mondatokat manipuláljuk.
+* Ha szóközzel kezd?dik, azt töröljük, a további feldolgozhatóság érdekében.
+* lefuttatjuk a kettosBetu() tagfüggvényt, hogy a kett?s bet?k megfelel?en jelenjenek meg a megfordított mondatban
+* áthelyezzük a nagybet?ket, majd az így létrehozott submondatot továbbítjuk a mondatok StringBuildernek.
+*/    
     public static StringBuilder kijelentoMondat() {
                 String subMondattxt;
               
